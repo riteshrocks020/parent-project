@@ -51,6 +51,8 @@ while IFS= read -r MODULE; do
   	fi
 done <<< "$MODULES"
 
+mvn clean
+
 git add --all
 
 git commit -m "commit from maven jenkins"
