@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+<parent>
+    <artifactId>parent-project</artifactId>
+    <groupId>com.baeldung</groupId>
+    <version>1.0.0</version>
+  </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.baeldung</groupId>
+    <artifactId>assembly-plugin-module</artifactId>
+    <version>0.0.1</version>
+    <packaging>maven-plugin</packaging>
+
+    <build>
+    <plugins>
+      <plugin>
+				<!-- Assembly Plugin for the win! -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.3</version>
+				<configuration>
+					<descriptors>
+						<descriptor>assembly/default.xml</descriptor>
+					</descriptors>
+				</configuration>
+				<executions>
+					<execution>
+						<id>assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+    </plugins>
+  </build>
+</project>
