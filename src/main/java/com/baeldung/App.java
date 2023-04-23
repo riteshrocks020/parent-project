@@ -1,7 +1,7 @@
 package com.baeldung;
 
 /**
- * Hello world!
+ * Hello world! test
  *
  */
 public class App 
