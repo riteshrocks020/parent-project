@@ -60,4 +60,6 @@ git add --all
 git commit -m "commit from maven jenkins"
 
 git push
+
+git push origin --tags
 echo "Build of all modules completed."
