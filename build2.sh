@@ -53,6 +53,8 @@ done <<< "$MODULES"
 
 mvn clean
 
+git tag
+
 git add --all
 
 git commit -m "commit from maven jenkins"
